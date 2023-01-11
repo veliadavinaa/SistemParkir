@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_myparking"
+    tools:context=".DataParkir">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtjudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Lokasi Parkir"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/merah"
+            android:layout_centerHorizontal="true"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/txtjudul"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/hijau"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gedung1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Zona Hijau"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nm_lokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="1234"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/txtjudul"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/card1"
+            app:cardBackgroundColor="@color/kuning"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gedung2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Zona Kuning"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nm_lokasi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="1234"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/merah"
+        android:layout_below="@+id/card1"
+        app:cardCornerRadius="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="6dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/pelataran1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zona Merah"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/nm_lokasi3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1234"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/card2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/card3"
+            app:cardBackgroundColor="@color/navy"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pelataran2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Lahan Terisi"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nm_lokasi4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="1234"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_kembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:text="Kembali" />
+
+    </RelativeLayout>
+
+</LinearLayout>
